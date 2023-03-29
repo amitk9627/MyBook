@@ -8,9 +8,10 @@ a{
     text-decoration: none;
     color: #fff;
 }
+
+/* header */
 #header{
     background-color: black;
-
     color: #fff;
     height: 100px;
 }
@@ -25,7 +26,6 @@ a{
     text-align: center;
 }
 #header .logo img{
-   
     height: 2rem;
     width: 2.5rem;
 }
@@ -42,7 +42,6 @@ a{
     background-color: #333;
     font-size: 1.2rem;
     margin: 0 20px;
-    
     border-radius: 5px;
     text-transform: uppercase;
 }
@@ -83,22 +82,23 @@ a{
     max-width: 400px;
     color: #fff;
     font-size: 1.5rem;
-    position: fixed;
+    position: absolute;
+    z-index: 1;
     border: 3px solid #f1f1f1;
     left: 50%;
     top:50%;
     translate: -50% -50%;
     display: none;
 }
-.login-form .close{
+.login-form .close, .close{
     float: right;
+    /* display:block; */
     margin: 10px;
     padding: 2px;
     font-size: 1rem;
     width: 7%;
 }
 .form-container{
-    
     padding: 10px;
     background-color: grey;
 }
@@ -119,4 +119,84 @@ a{
     border:none;
     cursor: pointer;
     margin-bottom: 10px;
+}
+/* coursel part */
+.carousel-height{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Add 2 Cart */
+.A2C{
+    display:none;
+    width: 400px;
+    height: 100vh;
+    float: right;
+    background-color: grey;
+
+}
+.product2C{
+    float:left;
+    /* margin-top: 25px; */
+}
+.w-250{
+    width: 250px;
+    height: 250px;
+    
+    margin:0 20px ;
+}
+.product2C-text{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+
+
+/* footer */
+#footer{
+    padding: 100px;
+   
+    height: auto;
+    background-color: #333;
+    color: white;
+}
+.W-50{
+    padding: 20px;
+    
+    width: 50%;
+    float: left;
+}
+.W-25{
+    padding:20px;
+ 
+    float: left;
+    width: 25%;
+}
+#footer hr{
+   border: solid 2px rgb(134, 117, 117);
+    
+}
+.copyright{
+    padding-left:20px ;
+    float:left;
+    font-size: 1.8rem;
+    text-align: left;
+    width: 60%;
+}
+.social-icons{
+   padding-right: 20px;
+    width: 40%;
+    float: left;
+    text-align: right;
+    float: left;
+   
+}
+.social-icons li{
+    background-color: white;
+   font-size: 30px;
+    margin: 0 20px;
+    display: inline-block;
 }
