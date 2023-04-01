@@ -6,7 +6,7 @@
 }
 .line{
     height: 1px;
-    border: 1px solid black;
+    border: 1px solid rgb(212, 210, 210);
     margin: 15px 0;;
 }
 a{
@@ -16,73 +16,87 @@ a{
 body {
 	font-family: "Open Sans", sans-serif;
 } 
-/* header*/
-#header{
+/*.head*/
+.head{
     background-color: black;
     color: #fff;
-    height: 100px;
+    height: 80px;
 }
-#header .logo{
-    font-size: 2rem;
+.head .logo{
+    font-size: 3rem;
     width: auto;
     float: left;
     position: absolute;
     left: 3%;
-    top: 5%;
-    translate: (-5%,-3%);
+    top: 3%;
+    translate: (-3%,-3%);
     text-align: center;
+    font-weight: 600;
 }
-#header .logo img{
-    height: 2rem;
-    width: 2.5rem;
+.head .logo img{
+    height: 2.5rem;
+    width: 4rem;
+   
 }
-#header ul{
-  margin: 30px 30px;
+.head ul{
+  margin: 20px 22px;
     float:right;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#header ul li{
+.head ul li{
     display: flex;
     flex-wrap: wrap;
     background-color: #333;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin: 0 20px;
     border-radius: 5px;
     text-transform: uppercase;
 }
-#header ul li form.search-form{
+.head ul li form.search-form{
     width: 300px;
     padding: 0;
 }
-#header ul li form.search-form input{
+.head ul li form.search-form input{
     float: left;
     height: 40px;
     width: 80%;
     font-size: 1rem;
 }
-#header ul li form.search-form button{
+.head ul li form.search-form button{
     float: left;
     height: 40px;
     width: 20%;
-    font-size: 1rem;
+    font-size: 1.8rem;
     background-color:#4589f5 ;
     color: black;
     border: 1px solid grey;
     cursor: pointer;
 }
-#header ul li form.search-form button:hover{
+.head ul li form.search-form button:hover{
     background: #0b7dda;
 }
-#header ul li.user{
-    border-radius: 40px;
-    font-size: 1.5rem;
-    padding: 40px;
+ul>li.btn-cart{
+    border-radius: 50%;
+    font-size: 1.8rem;
+    
+    color: black;
+    
 }
-#header ul li a:hover{
+ul>li.btn-cart button,ul>li.btn-user button{
+    border-radius: 50% 50%;
+}
+ul>li.btn-user{
+    border-radius: 50%;
+    font-size: 1.8rem;
+  
+    color: black;
+    padding: 1px;
+}
+.head ul li a:hover{
     color: yellow;
-    transition:all 1s ;
+    /* transition:all 1s ; */
 }
 /* login-form */
 .login-form{
@@ -281,10 +295,7 @@ h2 span{
 	font-size: 13px;
 	padding: 2px 0;
 }
-.carousel .item-price strike {
-	color: #999;
-	margin-right: 5px;
-}
+
 .carousel .item-price span {
 	color: #86bd57;
 	font-size: 110%;
@@ -305,7 +316,7 @@ h2 span{
 	border-radius: 50%;
 	border-color: transparent;
 }
-.carousel-indicators li {	
+.carousel-indicators>li {	
 	background: rgba(0, 0, 0, 0.2);
   
 }
@@ -360,7 +371,7 @@ h2 span{
     float: left;
    
 }
-.social-icons li{
+.social-icons>li{
     background-color: white;
    font-size: 30px;
     margin: 0 20px;

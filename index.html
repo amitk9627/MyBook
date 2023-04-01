@@ -9,8 +9,8 @@
     <link rel="icon" href="image/android-chrome-512x512.png">
     <!-- linking -->
     <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
-
+    
+    <!-- slider -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -25,26 +25,26 @@
 
 
   <!-- header -->
-  <section id="header">
-      <nav>
+  
+      <nav class="head">
           <label class="logo">
-              <span><img src="image/android-chrome-512x512.png" /> My Book</span>
+              <span><img src="image/android-chrome-512x512.png" /> Streetbook</span>
           </label>
-          <div>
-              <ul>
-                  <li>
-                      <form class="search-form">
-                          <input type="text" placeholder="Search..." name="search"/>
-                          <button type="submit"><i class="fa fa-search"></i></button>
-                      </form>
-                  </li>
-                  <li>Books</li>                
-                  <li><button type="submit" class="a2c" id="a2c"><i class="fa-solid fa-cart-shopping"></i></button></li>
-                  <li><button type="submit" class="user" id="LOGIN"><i class="fa-solid fa-user"></i><button></li>
-              </ul>
-          </div>
+          
+            <ul>
+                <li>
+                    <form class="search-form">
+                        <input type="text" placeholder="Search..." name="search"/>
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </li>
+                <li>Books</li>                
+                <li class="btn-cart"><button type="submit" class="a2c" id="a2c"><i class="fa-solid fa-cart-shopping"></i></button></li>
+                <li class="btn-user"><button type="submit" class="user" id="LOGIN"><i class="fa-solid fa-user"></i></button></li>
+            </ul>
+         
       </nav>
-  </section>
+  
   
     
         <!-- login form -->
@@ -74,19 +74,19 @@
       <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="1000">
-              <img src="./image/android-chrome-512x512.png" class="carousel-height width" alt="...">
+              <img src="./image/website-image.jpeg" class="carousel-height width" alt="...">
             </div>
             <div class="carousel-item" data-bs-interval="2000">
-              <img src="./image/android-chrome-512x512.png" class="carousel-height width" alt="...">
+              <img src="./image/website-image.jpeg" class="carousel-height width" alt="...">
             </div>
             <div class="carousel-item" data-bs-interval="2000">
-              <img src="./image/android-chrome-512x512.png" class="carousel-height width" alt="...">
+              <img src="./image/website-image.jpeg" class="carousel-height width" alt="...">
             </div>
             <div class="carousel-item" data-bs-interval="2000">
-              <img src="./image/android-chrome-512x512.png" class="carousel-height width" alt="...">
+              <img src="./image/website-image.jpeg" class="carousel-height width" alt="...">
             </div>
             <div class="carousel-item" data-bs-interval="2000">
-              <img src="./image/android-chrome-512x512.png" class="carousel-height width" alt="...">
+              <img src="./image/website-image.jpeg" class="carousel-height width" alt="...">
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
@@ -497,7 +497,204 @@
       </div>
     </div>
   </section>
-
+  <!--  -->
+  <!--  -->
+  <!--  -->
+  <section>
+    <div>
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Trending <b>Books</b><span><button class="btn btn-primary">View All</button></span></h2>
+          <div id="myCarousel2" class="carousel slide carousel-slider" data-ride="carousel" data-interval="0">
+          <!-- Carousel indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel2" data-slide-to="1"></li>
+            <li data-target="#myCarousel2" data-slide-to="2"></li>
+          </ol>   
+          <!-- Wrapper for carousel items -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <div class="row">
+                <div class="col-sm-3">
+                  <div class="thumb-wrapper">
+                    <div class="img-box">
+                      <img src="image/android-chrome-512x512.png" class="img-responsive" alt="">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Apple iPad</h4>
+                      <p class="item-price"><span>$369.00</span></p>
+                      
+                      <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>						
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="thumb-wrapper">
+                    <div class="img-box">
+                      <img src="image/android-chrome-512x512.png" class="img-responsive" alt="">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Sony Headphone</h4>
+                      <p class="item-price"> <span>$23.99</span></p>
+                      
+                      <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>						
+                  </div>
+                </div>		
+                <div class="col-sm-3">
+                  <div class="thumb-wrapper">
+                    <div class="img-box">
+                      <img src="image/android-chrome-512x512.png" class="img-responsive" alt="">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Macbook Air</h4>
+                      <p class="item-price"><span>$649.00</span></p>
+                      
+                      <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>						
+                  </div>
+                </div>								
+                <div class="col-sm-3">
+                  <div class="thumb-wrapper">
+                    <div class="img-box">
+                      <img src="image/android-chrome-512x512.png" class="img-responsive" alt="">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Nikon DSLR</h4>
+                      <p class="item-price"><span>$250.00</span></p>
+                      
+                      <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>						
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="row">
+                <div class="col-sm-3">
+                  <div class="thumb-wrapper">
+                    <div class="img-box">
+                      <img src="image/android-chrome-512x512.png" class="img-responsive" alt="">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Sony Play Station</h4>
+                      <p class="item-price"><span>$269.00</span></p>
+                      
+                      <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>						
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="thumb-wrapper">
+                    <div class="img-box">
+                      <img src="image/android-chrome-512x512.png" class="img-responsive" alt="">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Macbook Pro</h4>
+                      <p class="item-price"><span>$869.00</span></p>
+                      
+                      <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>						
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="thumb-wrapper">
+                    <div class="img-box">
+                      <img src="image/android-chrome-512x512.png" class="img-responsive" alt="">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Bose Speaker</h4>
+                      <p class="item-price"><span>$99.00</span></p>
+                      
+                      <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>						
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="thumb-wrapper">
+                    <div class="img-box">
+                      <img src="image/android-chrome-512x512.png" class="img-responsive" alt="">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Samsung Galaxy S8</h4>
+                      <p class="item-price"><span>$569.00</span></p>
+                      
+                      <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>						
+                  </div>
+                </div>						
+              </div>
+            </div>
+            <div class="item">
+              <div class="row">
+                <div class="col-sm-3">
+                  <div class="thumb-wrapper">
+                    <div class="img-box">
+                      <img src="image/android-chrome-512x512.png" class="img-responsive" alt="">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Apple iPhone</h4>
+                      <p class="item-price"><span>$349.00</span></p>
+                      
+                      <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>						
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="thumb-wrapper">
+                    <div class="img-box">
+                      <img src="image/android-chrome-512x512.png" class="img-responsive" alt="">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Canon DSLR</h4>
+                      <p class="item-price"><span>$250.00</span></p>
+                      
+                      <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>						
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="thumb-wrapper">
+                    <div class="img-box">
+                      <img src="image/android-chrome-512x512.png" class="img-responsive" alt="">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Google Pixel</h4>
+                      <p class="item-price"><span>$418.00</span></p>
+                      
+                      <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>						
+                  </div>
+                </div>	
+                <div class="col-sm-3">
+                  <div class="thumb-wrapper">
+                    <div class="img-box">
+                      <img src="image/android-chrome-512x512.png" class="img-responsive" alt="">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Apple Watch</h4>
+                      <p class="item-price"><span>$330.00</span></p>
+                      
+                      <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>						
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Carousel controls -->
+          <a class="carousel-control left" href="#myCarousel2" data-slide="prev">
+            <i class="fa fa-angle-left"></i>
+          </a>
+          <a class="carousel-control right" href="#myCarousel2" data-slide="next">
+            <i class="fa fa-angle-right"></i>
+          </a>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 
