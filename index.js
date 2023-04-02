@@ -8,7 +8,7 @@ document.getElementById("CLOSE").addEventListener("click",function(){
 // A2C
 document.getElementById("a2c").addEventListener("click",function (){
     document.getElementById("A2C").style.display="block";
-    document.getElementById("carousel-active").style.marginRight="400px"
+    document.getElementById("carousel-active").style.marginRight="405px"
 });
 document.getElementById("A2Cclose").addEventListener("click",function(){
     document.getElementById("A2C").style.display="none";
