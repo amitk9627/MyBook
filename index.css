@@ -111,28 +111,32 @@ ul>li.btn-user{
     translate: -50% -50%;
     display: none;
 }
-.login-form .close, .close{
+.login-form .close{
     float: right;
     background-color: #e01b1b;
     /* display:block; */
-    color: white;
+    color: black;
     opacity: 100%;
     margin: 10px;
     padding: 2px;
-    font-size: 1rem;
+    font-size: 2rem;
     width: 7%;
 }
 .form-container{
     padding: 10px;
     background-color: grey;
 }
+.form-container label{
+    font-size: 2.5rem;
+}
 .form-container h1{
     margin-bottom: 15px;
 }
 .form-container input[type=email] , .form-container input[type=password]{
-    margin: 20px 0;
+    margin: 10px 0;
     width: 100%;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    color: black;
 }
 .form-container .btn{
     font-size: 2rem;
@@ -163,24 +167,88 @@ ul>li.btn-user{
     height: 100vh;
     float: right;
     background-color: grey;
-    overflow:auto;
+    overflow-y:auto;
+    padding: 20px;
     
     /* position:fixed; */
     
 
 }
-.product2C{
-    float:right;
-    margin-top: 45px;
+.A2C .close{
+    float: right;
+    background-color: #e01b1b;
+    /* display:block; */
+    color: black;
+    opacity: 100%;
+    /* margin: 5px; */
+    padding: 2px;
+    font-size: 2rem;
+    width: 7%;
 }
+
+.single-product{
+    width: 98%;
+    background-color: #f1fdd4;
+    height:250px;
+    margin: 15px;
+    text-align: center;
+}
+
 .w-250{
-    width: 150px;
-    height: 200px;
+    width: 100%;
+    height:200px;
+    /* margin:15px 0; */
     
-    margin:0 20px ;
+} 
+
+.div1{
+    background-color: #862020;
+    float: left;
+    height: 200px;
+    width: 48%;
+    margin:20px 2px;
+}
+.div2{
+    background-color: #ccc;
+    float: left;
+    width: 48%;
+    height: 200px;
+    margin:20px 2px;
+    /* margin:10px 10px  ; */
 }
 .product2C-text{
+    float:right;
     text-align: center;
+    padding-right:30px ;
+    
+    /* font-size: 2.5rem; */
+}
+.a2c-heading{
+    font-size: 2.5rem;
+    margin: 20px 0 0 0px;
+    font-weight: 700;
+}
+.a2c-price{
+    font-size: 2rem;
+    margin: 20px 0 0 0;
+    font-weight: 500;
+    color: green;
+}
+.a2c-button{
+    width: 70%;
+    margin: 25px ;
+    font-size: 1.3rem;
+    border: none;
+    color: white;
+    background-color: blue;
+    border-radius: 10px;
+    margin: 30px 0 0 0;
+}
+.product2C-price{
+    float: right;
+    width: 50%;
+    /* text-align: center; */
+    padding-right:30px ;
     font-size: 1.5rem;
 }
 
